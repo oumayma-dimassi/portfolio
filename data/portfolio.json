@@ -3,7 +3,7 @@
         "image": "image1.webp",
         "title": "Booki",
         "text": "Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
-        "link": "#"
+        "link": "https://github.com/oumayma-dimassi/booki"
     },
     {
         "image": "image2.webp",
@@ -15,6 +15,6 @@
         "image": "image3.webp",
         "title": "Kasa",
         "text": "Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
-        "link": "#"
+        "link": "https://github.com/oumayma-dimassi/kasa"
     }
 ]
