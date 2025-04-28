@@ -1,20 +1,32 @@
 [
     {
-        "image": "image1.webp",
+        "image": "booki.webp",
         "title": "Booki",
-        "text": "Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
+        "text": " site web d'une agence de voyage Créez et intégrer avec HTML & CSS .",
         "link": "https://github.com/oumayma-dimassi/booki"
     },
     {
-        "image": "image2.webp",
-        "title": "Mon Vieux grimoire",
-        "text": "Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
-        "link": "#"
+        "image": "printit.webp",
+        "title": "Print it",
+        "text": "Site web crée en HTML, CSS et JS pour un imprimeur familial spécialisé dans les besoins d’entreprises de petite et grande taille.",
+        "link": "https://oumayma-dimassi.github.io/oumayma-projects/Print-it-JS-main/"
     },
     {
-        "image": "image3.webp",
+        "image": "kasa.webp",
         "title": "Kasa",
-        "text": "Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
+        "text": "Site web crée en React pour est une entreprise de location d’appartements entre particuliers. Kasa fait partie des leaders de la location d’appartements entre particuliers en France.",
         "link": "https://github.com/oumayma-dimassi/kasa"
+    },
+    {
+        "image": "logoSophie.webp",
+        "title": "sophie",
+        "text": " une page web crée dynamiquement avec JavaScript",
+        "link": "https://github.com/oumayma-dimassi/kasa"
+    },
+    {
+        "image": "cypress.webp",
+        "title": "Eco Bliss Bath",
+        "text": "Scripts pour automatiser les tests sur le site Eco Bliss Bath, spécialisée dans la vente de produits de beauté écoresponsables dont le produit principal est un savon solide",
+        "link": "https://github.com/oumayma-dimassi/auto"
     }
 ]
