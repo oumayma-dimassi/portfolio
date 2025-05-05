@@ -95,24 +95,7 @@ async function createPortfolioFromJSON() {
         });
 }
 
-async function createDescriptionFromJSON(){
-
-    const title = document.querySelector(".hero_title");
-    const desc = document.querySelector(".hero_desc");
-    const text = document.querySelector("#desc");
-    
-
-    fetch("data/desc.json")
-        .then((response) => response.json())
-        .then((data) => {
-            title.innerHTML = data.title;
-            desc.innerHTML = data.desc;
-            text.innerHTML = data.text;
-        });
-}
-
 // Call the functions to execute the code
-createDescriptionFromJSON();
 handleNavbarScroll();
 handleNavbarCollapse();
 createSkillsFromJSON();
