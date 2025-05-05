@@ -23,7 +23,11 @@ function handleNavbarCollapse() {
     });
 }
 
-function addNewRow(index, data, container, row) {
+function addNewRow(index, data, container, row, card) {
+    // Append the card to the current row
+    row.appendChild(card);
+
+    // If the index is a multiple of 3 or it's the last element, create a new row
     if ((index + 1) % 3 === 0 || index === data.length - 1) {
         container.appendChild(row);
         row = document.createElement("div");
@@ -55,11 +59,7 @@ async function createSkillsFromJSON() {
                     </div>
                 `;
 
-                // Append the card to the current row
-                row.appendChild(card);
-
-                // If the index is a multiple of 3 or it's the last element, create a new row
-                addNewRow(index, data, container, row);
+                addNewRow(index, data, container, row, card);
             });
         });
 }
@@ -70,7 +70,7 @@ async function createPortfolioFromJSON() {
     row.classList.add("row");
 
     // Load the JSON file
-    fetch("./data/portfolio.json")
+    fetch("data/portfolio.json")
         .then((response) => response.json())
         .then((data) => {
             // Iterate through the JSON data and create HTML elements
@@ -90,16 +90,29 @@ async function createPortfolioFromJSON() {
                 </div>
                 `;
 
-                // Append the card to the current row
-                row.appendChild(card);
-
-                // If the index is a multiple of 3 or it's the last element, create a new row
-                addNewRow(index, data, container, row);
+                addNewRow(index, data, container, row, card);
             });
         });
 }
 
+function createDescriptionFromJSON(){
+
+    const title = document.querySelector(".hero_title");
+    const desc = document.querySelector(".hero_desc");
+    const text = document.querySelector("#desc");
+    
+
+    fetch("data/desc.json")
+        .then((response) => response.json())
+        .then((data) => {
+            title.innerHTML = data.title;
+            desc.innerHTML = data.desc;
+            text.innerHTML = data.text;
+        });
+}
+
 // Call the functions to execute the code
+createDescriptionFromJSON();
 handleNavbarScroll();
 handleNavbarCollapse();
 createSkillsFromJSON();

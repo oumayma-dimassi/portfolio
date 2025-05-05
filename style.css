@@ -298,6 +298,11 @@ button,select{
     height: 100%;
     min-height: 234px
 }
+@media (max-width: 640px) {
+    .card-body{
+        min-height: 198px
+    }
+}
 .card-title{
     margin-bottom:.5rem
 }
@@ -307,7 +312,7 @@ button,select{
 .card-img,.card-img-top{
     border-top-left-radius:calc(.25rem - 1px);
     border-top-right-radius:calc(.25rem - 1px);
-    width:100%;
+    object-fit: fill;
     height: 117px
 }
 .fixed-top{
