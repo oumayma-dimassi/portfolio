@@ -95,7 +95,7 @@ async function createPortfolioFromJSON() {
         });
 }
 
-function createDescriptionFromJSON(){
+async function createDescriptionFromJSON(){
 
     const title = document.querySelector(".hero_title");
     const desc = document.querySelector(".hero_desc");

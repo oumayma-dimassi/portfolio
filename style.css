@@ -313,7 +313,8 @@ button,select{
     border-top-left-radius:calc(.25rem - 1px);
     border-top-right-radius:calc(.25rem - 1px);
     object-fit: fill;
-    height: 117px
+    height: 117px;
+    max-width: 950px
 }
 .fixed-top{
     position:fixed;
